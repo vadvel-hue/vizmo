@@ -1,0 +1,3 @@
+data.load.elf D:\Share_VM\vizmo\Share_VM\u-boot\u-boot /STRIPPART 5 /PATH D:\Share_VM\vizmo\Share_VM\u-boot\
+data.load.elf D:\Share_VM\vizmo\Share_VM\u-boot-2016.07\u-boot /STRIPPART 5 /PATH D:\Share_VM\vizmo\Share_VM\u-boot-2016.07\
+data.load.elf D:\Share_VM\vizmo\Share_VM\u-boot-2019.07\u-boot /STRIPPART 5 /PATH D:\Share_VM\vizmo\Share_VM\u-boot-2019.07\

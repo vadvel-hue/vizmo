@@ -1,0 +1,12 @@
+
+currently NOR has Uboot + Art calibration data
+NAND have rootfs and kernel
+eth0 - need to be the ethernet interface
+TI temperature driver
+WiFi Bring Up - AR9592 wifi chipset number
+
+5g Module is connected to PCIE0
+
+
+
+

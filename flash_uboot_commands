@@ -1,0 +1,30 @@
+#Uboot 2006
+# Make Sure Flash Address is 0x9F000000 and RAM_BOOT is not defined in build.sh
+
+setenv serverip 192.168.1.170
+save
+tftp 0x80100000 u-boot.bin
+sf erase 0 0x90000
+sf write 0x80100000 0x0 0x30000
+
+#Rajant Uboot
+setenv serverip 192.168.1.170
+save
+tftp 0x80100000 u-boot-rj-es1.bin
+sf erase 0 0x90000
+sf write 0x80100000 0x0 0x90000
+
+tftp 0x80100000 qca_kernel.es1
+sf erase 0x8a0000 0x110000
+sf write 0x80100000 0x8a0000 0x110000
+
+tftp 0x80100000 qca_rootfs.es1
+sf erase 0xa0000 0x6e0000
+sf write 0x80100000 0xa0000 0x6e0000
+
+
+setenv joby_qca vadivel
+save
+sf erase 0x90000 0x10000
+sf read 0x9f090000 0x10000 0x4000
+
